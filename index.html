@@ -27,6 +27,11 @@
   		color: #bdbdbd !important;
   	}
 
+  	@media only screen and (max-width: 990px) {
+  		.marDiv{
+  			margin-top: 0px !important;
+  		}
+  	}
   	.boxContent{
   		color: #424242;
   	}
@@ -66,6 +71,15 @@ a:hover
 	font-size: 20px !important;
 	border: 5px solid #1976d2 ;
 	transition: 0.3s;
+}
+
+.Bbtn:hover
+{
+	color: black !important;
+	background-color: transparent !important;
+	border: 2px solid #1976d2 ;
+	transition: 0.3s;
+
 }
 
 section{
@@ -123,7 +137,7 @@ section{
 <section style="background-color: #1C2331;clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));">
 	<div class="row">
 		<div class="col-lg-6">
-			<div style="margin: 100px 40px;text-align: center;">
+			<div class="" style="margin: 100px 40px;text-align: center;">
 			<span style="color: white; font-size: 40px;font-family:  'Acme';">Hey, I'm Kuldeep.</span>
 			<p style="font-size: 20px;">A web designer and developer from Mhow. I am under graduate student. I am currently pursuing Bachelor Of Technology in Computer Science And Engineering.</p>
 			<a target="_blank" href="data/KuldeepSalveCv.pdf" download="KuldeepSalveCv">
@@ -132,7 +146,7 @@ section{
 			</div>
 		</div>
 		<div class="col-lg-6">
-			<div style="margin:100px;border-bottom: 5px solid #1976d2;border-top: 5px solid #1976d2 ">
+			<div class="marDiv" style="margin:100px;border-bottom: 5px solid #1976d2;border-top: 5px solid #1976d2 ">
 				<div class="view overlay zoom" style="margin:20px;">
 					 <img  src="img/kuldeepProfile.jpg" class="img-fluid" alt="zoom">
  					 <div class="mask flex-center waves-effect waves-light" data-toggle="modal" data-target="#basicExampleModal"></div>
@@ -158,7 +172,7 @@ section{
 	<hr class="hr" style="margin:50px; margin-top: 0px !important;">
 	<div class="row" style="text-align: center;">
 		<div class=" col-md-6">
-			<div class="box" >
+			<div class="box " >
 				<i class="fas fa-pen-nib mb-5" style="font-size: 50px;color: #1976d2;"></i>
 			<h3 style="color: black;font-weight: bold;">Web Design</h3>
 			<p class="boxContent" style="font-size: 20px;">User Focused</p>
@@ -167,7 +181,7 @@ section{
 		</div>
 
 		<div class="col-md-6">
-			<div class="box" >
+			<div class="box marDiv" >
 				<i class="fas fa-desktop mb-5" style="font-size: 50px;color: #1976d2;"></i>
 			<h3 style="color: black;font-weight: bold;">Web Development</h3>
 			<p class="boxContent"  style="font-size: 20px;">Responsive and Fast</p>
@@ -179,15 +193,178 @@ section{
 
 
 <!-- projects -->
-<!-- services -->
+
 <section >
 	
 	<p style=" margin-left: 50px; color: #607D8B; font-size: 40px;font-family:  'Acme';">My Projects.</p>
 	<hr class="hr" style="margin:50px; margin-top: 0px !important;">
-	<div class="row" style="text-align: center;">
-		<div class="col-lg-6"></div>
-		<div class="col-lg-6"></div>
+
+<!-- project 1 -->	
+	<div class="row" style="">
+		<div class="col-lg-6">
+			<div class="" style="margin: 50px;">
+				<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-slide" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active black"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="2"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="3" class="active"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="4"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="5"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="img/SchoolFinder/Screenshot1.png"
+          alt="First slide">
+
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/SchoolFinder/Screenshot2.png"
+          alt="Second slide">
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/SchoolFinder/Screenshot3.png"
+          alt="Third slide">
+       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/SchoolFinder/Screenshot4.png"
+          alt="Fourth slide">
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/SchoolFinder/Screenshot5.png"
+          alt="Fifth slide">
+       
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/SchoolFinder/Screenshot6.png"
+          alt="Sixth slide">
+       
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="marDiv" style="margin: 50px;">
+				<p style="color:black; font-size: 40px;font-family:  'Acme';">1. School Finder</p>
+				<hr class="hr" style="margin-top: 0px !important;">
+				<p class="boxContent"  style="font-size: 20px;">J2EE Web Application.</p>
+			<p class="boxContent">School Finder is the system designed especially for those people who want to search a particular school on the basis of its type, courses offered and location of the school. In this application we can search schools easily and get their details in just a second. If end user wants to search a best school in a city, he or she can search here.</p>
+			<a target="_blank" href="https://github.com/Kuldeepsalve/SchoolFinder"><button type="button" class="Bbtn" style="color:white;background-color: #1976d2;border: 5px solid #1976d2 ;font-size: 12px; ">View Project.</button></a>
+			</div>
+		</div>
 	</div>
+<!-- project 1 -->
+
+<!-- project 2 -->
+	<div class="row" style="">
+		<div class="col-lg-6">
+			<div class="" style="margin: 50px;">
+				<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-slide" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active black"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li class="black" data-target="#carousel-example-2" data-slide-to="2"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="img/TicTacToe/Screenshot1.png"
+          alt="First slide">
+
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/TicTacToe/Screenshot2.png"
+          alt="Second slide">
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/TicTacToe/Screenshot3.png"
+          alt="Third slide">
+       
+      </div>
+    </div>
+    
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="marDiv" style="margin: 50px;">
+				<p style="color:black; font-size: 40px;font-family:  'Acme';">2. Tic-Tac-Toe Game.</p>
+				<hr class="hr" style="margin-top: 0px !important;">
+				<p class="boxContent"  style="font-size: 20px;">Using Java Script and HTML.</p>
+			<p class="boxContent">Their are no need of waste paper to play Tic Tac Toe, Now you can play Tic Tac Toe on any device for free. You need just a Single HTML page to play this hame. I hope you will enjoy it. It is just for fun.</p>
+			<a target="_blank" href="https://github.com/Kuldeepsalve/TicTacToe"><button type="button" class="Bbtn" style="color:white;background-color: #1976d2;border: 5px solid #1976d2 ;font-size: 12px; ">View Project.</button></a>
+			<a target="_blank" href="https://kuldeepsalve.github.io/TicTacToe/"><button type="button" class="Bbtn" style="color:white;background-color: #1976d2;border: 5px solid #1976d2 ;font-size: 12px; ">Play Now.</button></a>
+			</div>
+		</div>
+	</div>
+<!-- project 2 -->
+
+
 </section>
 
 <!-- Footer -->
