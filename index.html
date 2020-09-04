@@ -21,6 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
 
+  <!-- mail -->
+  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+
   <style type="text/css">
   	body{
   		font-family:'Antic Slab';
@@ -114,13 +118,13 @@ section{
 
     <ul class="navbar-nav ml-auto">
        <div>
-  	<a class="navLink navbar-brand mr-5" href="#" style="font-size: 25px;">Projects</a>
+  	<a class="navLink navbar-brand mr-5" href="#project" style="font-size: 25px;">Projects</a>
   </div>
     <div>
-  	<a class="navLink navbar-brand mr-5" href="#" style="font-size: 25px;">About</a>
+  	<a class="navLink navbar-brand mr-5" href="#about" style="font-size: 25px;">About</a>
   </div>
     <div>
-  	<a class="navLink navbar-brand mr-5" href="#" style="font-size: 25px; ">Contact</a>
+  	<a class="navLink navbar-brand mr-5" href="#contact" style="font-size: 25px; ">Contact</a>
   </div>
 
     </ul>
@@ -134,7 +138,7 @@ section{
   
 </header>
 
-<section style="background-color: #1C2331;clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));">
+<section id="about" style="background-color: #1C2331;clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));">
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="" style="margin: 100px 40px;text-align: center;">
@@ -166,7 +170,7 @@ section{
 </div>
 
 <!-- services -->
-<section >
+<section id="services" >
 	
 	<p style=" margin-left: 50px; color: #607D8B; font-size: 40px;font-family:  'Acme';">My Services.</p>
 	<hr class="hr" style="margin:50px; margin-top: 0px !important;">
@@ -194,7 +198,7 @@ section{
 
 <!-- projects -->
 
-<section >
+<section  id="project">
 	
 	<p style=" margin-left: 50px; color: #607D8B; font-size: 40px;font-family:  'Acme';">My Projects.</p>
 	<hr class="hr" style="margin:50px; margin-top: 0px !important;">
@@ -204,15 +208,15 @@ section{
 		<div class="col-lg-6">
 			<div class="" style="margin: 50px;">
 				<!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-slide" data-ride="carousel">
+<div id="carousel-example-1" class="carousel slide carousel-slide" data-ride="carousel">
   <!--Indicators-->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-2" data-slide-to="0" class="active black"></li>
-    <li class="black" data-target="#carousel-example-2" data-slide-to="1"></li>
-    <li class="black" data-target="#carousel-example-2" data-slide-to="2"></li>
-    <li class="black" data-target="#carousel-example-2" data-slide-to="3" class="active"></li>
-    <li class="black" data-target="#carousel-example-2" data-slide-to="4"></li>
-    <li class="black" data-target="#carousel-example-2" data-slide-to="5"></li>
+    <li data-target="#carousel-example-1" data-slide-to="0" class="active black"></li>
+    <li class="black" data-target="#carousel-example-1" data-slide-to="1"></li>
+    <li class="black" data-target="#carousel-example-1" data-slide-to="2"></li>
+    <li class="black" data-target="#carousel-example-1" data-slide-to="3" class="active"></li>
+    <li class="black" data-target="#carousel-example-1" data-slide-to="4"></li>
+    <li class="black" data-target="#carousel-example-1" data-slide-to="5"></li>
   </ol>
   <!--/.Indicators-->
   <!--Slides-->
@@ -269,11 +273,11 @@ section{
   </div>
   <!--/.Slides-->
   <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -366,6 +370,95 @@ section{
 
 
 </section>
+<!-- project end -->
+
+<!-- Contact Me -->
+
+<section id="contact" >
+	
+	<p style=" margin-left: 50px; color: #607D8B; font-size: 40px;font-family:  'Acme';">Contact Me.</p>
+	<hr class="hr" style="margin:50px; margin-top: 0px !important;">
+
+	<div style="margin: 50px;">
+		<p class="boxContent">If you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.</p>
+
+		<!--Section: Contact v.2-->
+<section class="mb-4">
+
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-7 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Full name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">How Can I Help?</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+                			<input class="Bbtn" style="color:white;background-color: #1976d2;border: 5px solid #1976d2 ;font-size: 15px; " type="button" value="Send Message" onclick="validateForm()"/>
+
+            </form>
+
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+
+    </div>
+
+</section>
+
+	</div>
+</section>
+<!-- Contact Me end -->
+
+
 
 <!-- Footer -->
 <footer class="page-footer unique-color-dark pt-4" style="clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);">
@@ -382,7 +475,7 @@ section{
         <!-- Content -->
         <h5 style="color: white; font-size: 40px;font-family:  'Acme';">Let's Work Together</h5>
         <p style="font-size: 20px;color: #bdbdbd !important;">Have a project you'd like to discuss?</p>
-        <button type="button" class="btn" style="color:white;background-color: #1976d2;border: 5px solid #1976d2 ;font-size: 17px; ">Get in touch</button>
+        <p>Get in touch with me...</p>
 			</div>
   
       <!-- Grid column -->
@@ -456,8 +549,12 @@ section{
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/index.js" ></script>  
+
   <!-- Your custom scripts (optional) -->
+  
   <script type="text/javascript"></script>
+
 
 </body>
 </html>
