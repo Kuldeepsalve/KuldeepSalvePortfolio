@@ -27,7 +27,11 @@
       return false;
   }
   document.querySelector('.status').innerHTML = "Sending...";
-  sendEmail();
+   
+  if(sendEmail())
+    {
+        document.getElementById('reset').click();
+    }
 }
 
 
@@ -42,6 +46,8 @@ function sendEmail() {
 	Subject : document.getElementById('subject').value,
 	Body : "Name: "+document.getElementById('name').value +'<br>'+"Email: "+document.getElementById('email').value+"<br>"+"Message: "+document.getElementById('message').value,
 	}).then(
-		message =>  document.querySelector('.status').innerHTML = "Message Sent Successfully."
-	);
+        message =>  document.querySelector('.status').innerHTML = "Message Sent Successfully."
+        
+    );
+  return true;
 }
